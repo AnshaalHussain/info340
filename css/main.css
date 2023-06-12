@@ -1,0 +1,360 @@
+body {
+  font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  line-height: 18px;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  margin-top: 0px;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-weight: 100;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+p {
+  line-height: 1.43;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+}
+
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header */
+
+.header {
+  background: linear-gradient(#391D18, #814236);
+  height: 50vh;
+  color: #fff;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.amzn-button {
+  background-color: #814236;
+  color: #fff;
+  border: 1px solid #391D18;
+  border-radius: 25px;
+  padding: 0.45rem 1.5rem;
+  text-decoration: none;
+}
+
+.link-text {
+  display: none;
+}
+
+.mobile-cart-icon {
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+
+  .header {
+    background-image: url(../img/header.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: left;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  
+  .mobile-cart-icon {
+    display: none;
+  }
+  
+  .link-text {
+    display: inline;
+  }
+
+}
+
+/* Features */
+
+.features {
+  background-color:  #F8F8F8;
+  padding: 1rem 0rem;
+}
+
+.features h2 {
+  font-variant: small-caps;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+.card {
+  border: 1px solid #DFDFDF;
+  border-radius: 3px;
+  background-color: #fff;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card i {
+  color: #814236;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 992px) {
+
+  .features h2 {
+    text-align: start;
+  }
+
+  .cards-container {
+      /* when the screen is 992px or wider,
+  turn it into a flexbox */
+    display: flex;
+    /* wrap columns if they are too wide for one line */
+    flex-wrap: wrap;
+  }
+
+  .card {
+    flex-basis: 50%;
+    max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    align-items: center;
+  }
+  
+}
+
+@media (min-width: 1200px) {
+  .card {
+    /* reset flex-basis to automatic sizing based on content*/
+    flex-basis: auto;
+    /* grow all columns equally */
+    flex-grow: 1;
+
+    /* max-width: 200px; */
+    max-width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card i {
+    margin-right: 1rem;
+  }
+}
+
+/* Uses */
+
+.uses {
+  background-color: #EBEBEB;
+  padding: 1rem 0rem;
+}
+
+.uses h2 {
+  font-variant: small-caps;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+.uses .card {
+  display: flex;
+  flex-direction: column;
+  padding: 0rem;
+  max-width: 330px;
+}
+
+.uses-img {
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  margin-bottom: 0.65rem;
+}
+
+.img1 {
+  background-image: url(../img/uses/img1.jpg);
+}
+
+.img2 {
+  background-image: url(../img/uses/img2.jpg);
+}
+
+.img3 {
+  background-image: url(../img/uses/img3.jpg);
+}
+
+.img4 {
+  background-image: url(../img/uses/img4.jpg);
+}
+
+@media (min-width: 992px) {
+
+  .uses h2 {
+    text-align: start;
+  }
+
+  .uses p {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .uses .cards-container {
+    /* when the screen is 992px or wider,
+  turn it into a flexbox */
+    display: flex;
+    /* wrap columns if they are too wide for one line */
+    flex-wrap: wrap;
+  }
+
+  .uses .card {
+    flex-basis: 50%;
+    max-width: 500px;
+    margin-bottom: 40px;
+
+    display: flex;
+    align-items: center;
+  }
+
+
+.uses-img {
+  width: 100%;
+}
+  
+}
+
+
+/* Testimonials */
+
+.testimonials {
+  background-color: #F8F8F8;
+  padding: 1rem 0rem;
+}
+
+.testimonials h2 {
+  font-variant: small-caps;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+.testimonials h3 {
+  text-align: left;
+  font-size: 0.8rem;
+}
+
+
+.test-card {
+  border: 1px solid #DFDFDF;
+  border-radius: 3px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 400px;
+}
+
+@media (min-width: 992px) {
+
+
+  .testimonials h2 {
+    text-align: left;
+  }
+
+  .test-container {
+    /* when the screen is 992px or wider,
+    turn it into a flexbox */
+    display: flex;
+    /* wrap columns if they are too wide for one line */
+    flex-wrap: wrap;
+  }
+
+  .test-card {
+    flex-basis: 50%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    align-items: center;
+  }
+}
+
+.test-card img {
+  min-width: 90px;
+  border-radius: 50%;
+  margin-right: 1rem;
+  
+}
+
+.test-card p {
+  text-align: left;
+}
+
+.test-name {
+  color: #999999;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #391D18;
+  color: #EEEEEE;
+  padding: 1.8rem;
+}
+
+.footer a {
+  color: #AAAAAA;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: none;
+}
+
+.icons-container {
+  font-size: 1.75rem;
+}
+
+.icon {
+padding: 0 0.25rem;
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+
+@media (min-width: 992px) {
+  .footer .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
